@@ -1,0 +1,30 @@
+
+>>> from calculadora import Calculadora
+>>> calc = Calculadora()
+
+>>> calc.sumar(2,3)
+5
+
+>>> calc.sumar(3,3)
+6
+
+>>> calc.sumar(0,3)
+3
+
+>>> calc.sumar(-2,3)
+'solo numeros positivos'
+
+>>> calc.sumar('x',3)
+'solo se pueden sumar numeros'
+
+>>> calc.sumar(2,None)
+'operacion incompleta'
+
+>>> calc.sumar(2,[1])
+'no se pueden sumar listas'
+
+>>> calc.sumar(3.5,3)
+'solo se pueden sumar numeros enteros'
+
+>>> calc.sumar(3,3.5)
+'solo se pueden sumar numeros enteros'

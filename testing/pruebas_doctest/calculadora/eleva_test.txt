@@ -1,0 +1,44 @@
+>>> from calculadora import Calculadora
+>>> calc = Calculadora()
+
+>>> calc.elevar(3,3)
+27
+
+>>> calc.elevar(2,2)
+4
+
+>>> calc.elevar(3,2)
+9
+
+>>> calc.elevar(9.5,3)
+'solo se pueden elevar numeros enteros'
+
+>>> calc.elevar(20,3.5)
+'solo se pueden elevar numeros enteros'
+
+>>> calc.elevar(4,None)
+'operacion incompleta'
+
+>>> calc.elevar(None,2)
+'operacion incompleta'
+
+>>> calc.elevar(None,None)
+'operacion incompleta'
+
+>>> calc.elevar(2,[1,2,3])
+'no se pueden elevar listas'
+
+>>> calc.elevar([1,2,3],5)
+'no se pueden elevar listas'
+
+>>> calc.elevar(-2,3)
+'solo numeros positivos'
+
+>>> calc.elevar(12,-3)
+'solo numeros positivos'
+
+>>> calc.elevar('x',3)
+'solo se pueden elevar numeros'
+
+>>> calc.elevar(10,'x')
+'solo se pueden elevar numeros'

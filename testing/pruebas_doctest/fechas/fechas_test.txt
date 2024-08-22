@@ -1,0 +1,9 @@
+Pruebas para el módulo de fechas.
+
+Función que te regresa una fecha en texto.
+
+>>> from fechas import fecha
+
+>>> fecha('19/08/2024')
+'Diesinueve de agosto del dos mil veinticuatro'
+

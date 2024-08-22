@@ -1,0 +1,47 @@
+>>> from calculadora import Calculadora
+>>> calc = Calculadora()
+
+>>> calc.dividir(50,2)
+25.0
+
+>>> calc.dividir(20,2)
+10.0
+
+>>> calc.dividir(3,2)
+1.5
+
+>>> calc.dividir(9.5,3)
+'solo se pueden dividir numeros enteros'
+
+>>> calc.dividir(20,3.5)
+'solo se pueden dividir numeros enteros'
+
+>>> calc.dividir(2,None)
+'operacion incompleta'
+
+>>> calc.dividir(None,1)
+'operacion incompleta'
+
+>>> calc.dividir(None,None)
+'operacion incompleta'
+
+>>> calc.dividir(2,[1,2,3])
+'no se pueden dividir listas'
+
+>>> calc.dividir([1,2,3],5)
+'no se pueden dividir listas'
+
+>>> calc.dividir(-2,3)
+'solo numeros positivos'
+
+>>> calc.dividir(12,-3)
+'solo numeros positivos'
+
+>>> calc.dividir('x',3)
+'solo se pueden dividir numeros'
+
+>>> calc.dividir(10,'x')
+'solo se pueden dividir numeros'
+
+>>> calc.dividir(5,0)
+'como vas a dividir entre cero papito...'

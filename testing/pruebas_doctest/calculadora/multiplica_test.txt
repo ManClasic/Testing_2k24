@@ -1,0 +1,41 @@
+>>> from calculadora import Calculadora
+>>> calc = Calculadora()
+
+>>> calc.multiplicar(9,9)
+81
+
+>>> calc.multiplicar(2,5)
+10
+
+>>> calc.multiplicar(9.5,3)
+'solo se pueden multiplicar numeros enteros'
+
+>>> calc.multiplicar(20,3.5)
+'solo se pueden multiplicar numeros enteros'
+
+>>> calc.multiplicar(2,None)
+'operacion incompleta'
+
+>>> calc.multiplicar(None,1)
+'operacion incompleta'
+
+>>> calc.multiplicar(None,None)
+'operacion incompleta'
+
+>>> calc.multiplicar(2,[1,2,3])
+'no se pueden multiplicar listas'
+
+>>> calc.multiplicar([1,2,3],5)
+'no se pueden multiplicar listas'
+
+>>> calc.multiplicar(-2,3)
+'solo numeros positivos'
+
+>>> calc.multiplicar(12,-3)
+'solo numeros positivos'
+
+>>> calc.multiplicar('x',3)
+'solo se pueden multiplicar numeros'
+
+>>> calc.multiplicar(10,'x')
+'solo se pueden multiplicar numeros'

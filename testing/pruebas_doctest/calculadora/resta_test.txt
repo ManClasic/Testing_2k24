@@ -1,0 +1,42 @@
+
+>>> from calculadora import Calculadora
+>>> calc = Calculadora()
+
+>>> calc.restar(3,2)
+1
+
+>>> calc.restar(2,3)
+-1
+
+>>> calc.restar(3.5,3)
+'solo se pueden restar numeros enteros'
+
+>>> calc.restar(3,3.5)
+'solo se pueden restar numeros enteros'
+
+>>> calc.restar(2,None)
+'operacion incompleta'
+
+>>> calc.restar(None,1)
+'operacion incompleta'
+
+>>> calc.restar(None,None)
+'operacion incompleta'
+
+>>> calc.restar(2,[1,2,3])
+'no se pueden restar listas'
+
+>>> calc.restar([1,2,3],5)
+'no se pueden restar listas'
+
+>>> calc.restar(-2,3)
+'solo numeros positivos'
+
+>>> calc.restar(12,-3)
+'solo numeros positivos'
+
+>>> calc.restar('x',3)
+'solo se pueden restar numeros'
+
+>>> calc.restar(10,'x')
+'solo se pueden restar numeros'
