@@ -1,5 +1,4 @@
 def fecha(fecha):
-    # Diccionarios para convertir números a palabras
     dias = {
         1: "Uno", 2: "Dos", 3: "Tres", 4: "Cuatro", 5: "Cinco", 6: "Seis", 7: "Siete", 8: "Ocho", 9: "Nueve", 10: "Diez",
         11: "Once", 12: "Doce", 13: "Trece", 14: "Catorce", 15: "Quince", 16: "Dieciséis", 17: "Diecisiete", 18: "Dieciocho", 
@@ -17,22 +16,18 @@ def fecha(fecha):
     }
 
     decenas_dict = {
-        10: "diez", 11: "once", 12: "doce", 13: "trece", 14: "catorce", 15: "quince", 16: "dieciséis", 17: "diecisiete",
-        18: "dieciocho", 19: "diecinueve", 20: "veinte", 30: "treinta", 40: "cuarenta", 50: "cincuenta", 60: "sesenta",
+        10: "diez", 20: "veinte", 30: "treinta", 40: "cuarenta", 50: "cincuenta", 60: "sesenta",
         70: "setenta", 80: "ochenta", 90: "noventa"
     }
 
-    # Separar la fecha en día, mes y año
     dia_str, mes_str, año_str = fecha.split('/')
     dia = int(dia_str)
     mes = int(mes_str)
     año = int(año_str)
     
-    # Convertir día y mes a palabras
     dia_palabras = dias[dia]
     mes_palabras = meses[mes]
 
-    # Convertir el año a palabras
     miles = año // 1000
     centenas = (año % 1000) // 100
     decenas_y_unidades = año % 100
