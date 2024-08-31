@@ -1,0 +1,38 @@
+Pruebas para el módulo de edades.
+
+Función que te regresa un mensaje en función de tu edades.
+
+>>> from edades import edad
+
+>>> edad(-1)
+'No existes'
+
+>>> edad(3)
+'Eres un niño'
+
+>>> edad(13)
+'Eres un puberto'
+
+>>> edad(17)
+'Eres un adolecente'
+
+>>> edad(16)
+'Eres un adolecente'
+
+>>> edad(18)
+'Eres un adulto'
+
+>>> edad(25)
+'Eres un adulto'
+
+>>> edad(61)
+'Eres un adulto mayor'
+
+>>> edad(110)
+'Eres un mumm-ra'
+
+>>> edad('X')
+'Edad solo numerica'
+
+>>> edad(None)
+'Introduce una edad'
