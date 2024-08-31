@@ -6,7 +6,7 @@ Pruebas para la funcion que te regresa el promedio de tus calificaciones.
 
 >>> avg = Promedios()
 
->>> avg.promedio(10,10,10,10)
+>>> avg.promedio(10,10,10,10,10,10,10)
 10.0
 
 >>> avg.promedio(10,8,8)
