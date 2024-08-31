@@ -1,0 +1,44 @@
+>>> from calculadora import Calculadora
+>>> calc = Calculadora()
+
+>>> calc.raiz(81,2)
+9.0
+
+>>> calc.raiz(25,2)
+5.0
+
+>>> calc.raiz(50,3)
+3.6840314986403864
+
+>>> calc.raiz(9.5,3)
+'solo se puede sacar raiz de numeros enteros'
+
+>>> calc.raiz(20,3.5)
+'solo se puede sacar raiz de numeros enteros'
+
+>>> calc.raiz(4,None)
+'operacion incompleta'
+
+>>> calc.raiz(None,2)
+'operacion incompleta'
+
+>>> calc.raiz(None,None)
+'operacion incompleta'
+
+>>> calc.raiz(2,[1,2,3])
+'no se puede sacar raiz de listas'
+
+>>> calc.raiz([1,2,3],5)
+'no se puede sacar raiz de listas'
+
+>>> calc.raiz(-2,3)
+'solo numeros positivos'
+
+>>> calc.raiz(12,-3)
+'solo numeros positivos'
+
+>>> calc.raiz('x',3)
+'solo se puede sacar raiz de numeros'
+
+>>> calc.raiz(10,'x')
+'solo se puede sacar raiz de numeros'
