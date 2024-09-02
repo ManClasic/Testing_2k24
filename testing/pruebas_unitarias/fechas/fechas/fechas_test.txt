@@ -1,0 +1,10 @@
+Pruebas para el módulo de fechas.
+
+Función que te regresa una fecha en texto.
+
+>>> from fechas import fecha
+
+>>> fecha('14/06/1998')
+'Catorce de Junio del mil nuevecientos noventa y ocho'
+
+
