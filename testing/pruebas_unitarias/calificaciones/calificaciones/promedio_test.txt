@@ -1,0 +1,39 @@
+Pruebas para el módulo de promedio.
+
+Pruebas para la funcion que te regresa el promedio de tus calificaciones.
+
+>>> from promedio import Promedios
+
+>>> avg = Promedios()
+
+>>> avg.promedio(10,10,10,10,10,10,10)
+10.0
+
+>>> avg.promedio(10,8,8)
+8.67
+
+>>> avg.promedio('X',8,10)
+'La calificación debe ser un numero'
+
+>>> avg.promedio(8,12,9)
+'Calificación maxima es 10'
+
+>>> avg.promedio(10,7,-3)
+'La calificación no puede ser menor que cero'
+
+>>> avg.promedio(8,9,7.8)
+'La calificación debe ser un número entero'
+
+>>> avg.promedio(None,10,8)
+'No se proporcionaron calificaciones'
+
+>>> avg.promedio([6,7],8,9)
+'No se pueden promediar listas'
+
+>>> avg.promedio(0,0,0)
+0
+
+>>> avg.promedio(8,9,True)
+'No se aceptan valores booleanos'
+
+
