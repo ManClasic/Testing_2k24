@@ -7,4 +7,3 @@ urlpatterns = [
     path('principal/', views.principal),
     path('articulos/', include('articulos.urls')),
 ]
-
